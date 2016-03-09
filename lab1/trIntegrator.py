@@ -1,5 +1,4 @@
 import scipy.integrate
-import math
 
 #class to integrate the given poly function
 class TriIntegrator:

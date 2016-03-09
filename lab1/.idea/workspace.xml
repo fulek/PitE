@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApplicationMgr.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ApplicationMgr.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApplicationMgr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6453901">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.2777778">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -37,10 +37,8 @@
         <entry file="file://$PROJECT_DIR$/trIntegrator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
+              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,7 +58,7 @@
       <file leaf-file-name="test_triIntegrator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_triIntegrator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.33333334">
+            <state vertical-scroll-proportion="-2.5">
               <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -72,7 +70,7 @@
       <file leaf-file-name="inputReader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inputReader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.555555">
+            <state vertical-scroll-proportion="-22.222221">
               <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
               <folding />
             </state>
@@ -87,6 +85,16 @@
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all_test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/all_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.031446543">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,17 +123,25 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/inputValidator.py" />
-        <option value="$PROJECT_DIR$/trIntegrator.py" />
         <option value="$PROJECT_DIR$/file" />
         <option value="$PROJECT_DIR$/test_triIntegrator.py" />
         <option value="$PROJECT_DIR$/test_inputValidator.py" />
         <option value="$PROJECT_DIR$/test_inputReader.py" />
-        <option value="$PROJECT_DIR$/ApplicationMgr.py" />
         <option value="$PROJECT_DIR$/inputReader.py" />
+        <option value="$PROJECT_DIR$/ApplicationMgr.py" />
+        <option value="$PROJECT_DIR$/trIntegrator.py" />
+        <option value="$PROJECT_DIR$/all_test.py" />
       </list>
     </option>
   </component>
@@ -185,24 +201,7 @@
   <component name="PropertiesComponent">
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Python.ApplicationMgr">
-    <configuration default="false" name="trIntegrator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="lab1" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trIntegrator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.all_test">
     <configuration default="false" name="test_triIntegrator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -284,6 +283,23 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="all_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="lab1" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/all_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -450,19 +466,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.ApplicationMgr" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_triIntegrator" />
-      <item index="2" class="java.lang.String" itemvalue="Python.trIntegrator" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_triIntegrator" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in TestInputValidator" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in test_inputValidator" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in test_inputReader" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_triIntegrator" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestInputValidator" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_inputValidator" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in test_inputReader" />
+      <item index="6" class="java.lang.String" itemvalue="Python.all_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_inputReader" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_inputValidator" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in TestInputValidator" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_triIntegrator" />
-        <item index="4" class="java.lang.String" itemvalue="Python.trIntegrator" />
+        <item index="0" class="java.lang.String" itemvalue="Python.all_test" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_inputReader" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_inputValidator" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestInputValidator" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test_triIntegrator" />
       </list>
     </recent_temporary>
   </component>
@@ -573,9 +589,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -619,9 +633,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -665,9 +677,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -711,9 +721,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,16 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trIntegrator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inputValidator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -763,23 +761,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_inputReader.py">
+    <entry file="file://$PROJECT_DIR$/test_triIntegrator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_triIntegrator.py">
+    <entry file="file://$PROJECT_DIR$/ApplicationMgr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.33333334">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state vertical-scroll-proportion="-0.2777778">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trIntegrator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -795,19 +801,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inputReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.555555">
+        <state vertical-scroll-proportion="-22.222221">
           <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationMgr.py">
+    <entry file="file://$PROJECT_DIR$/test_inputReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6453901">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031446543">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
