@@ -37,6 +37,8 @@ class InputReader:
     def readFile(self):#read input from file
         while True:
             fname = self.fileName()
+            if self.checkIfQuit(fname):
+                return False
             validator = inputValidator.InputValidator()
             if validator.checkIffile(fname):
                 self.fname = fname
