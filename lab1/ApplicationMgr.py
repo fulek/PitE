@@ -8,7 +8,7 @@ def printPoly(rang, stp, coef, lineNum):
         if a > 0:
             poly+=' + '
         poly+=str(coef[a])+'*x^'+str(a)
-    print('Line ' + str(lineNum) + ': integration a poly '+poly+' from '+str(rang[0])+' to '+str(rang[1])+' with '+str(stp)+' steps')
+    print(str(lineNum) + ': integration a poly '+poly+' from '+str(rang[0])+' to '+str(rang[1])+' with '+str(stp)+' steps')
 
 def printResult(sp, tm):#print Results
     print('scipy: '+format(sp,'.3g'))
