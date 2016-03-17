@@ -1,0 +1,1 @@
+#Store data. Save to file and tar it if #entries == 10k. Also here read data and draw plots.
