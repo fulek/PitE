@@ -3,13 +3,13 @@ import numpy
 import random
 import math
 class FlightSimulator:
+
     def __init__(self, deltaTime):
         self.deltatime = deltaTime#s
         self.height =0.
         self.heightMax=10.e3
         self.cw  = 0.02
         self.rho = 0.8 #Should depend on temperature pressure
-        self.velocity =0.
         self.Area = 50
         self.Thrust = 281.e3#Should not be constant
         self.mass = 185.e3
@@ -23,37 +23,43 @@ class FlightSimulator:
         self.distanceGone = 0.
         self.velocity =0.
         self.altitude =0.
+        self.launched = False
+        self.distanceLand = 0
 
-    def run(self):
+    def run(self):#set flight number
         self.flightNumber=numpy.random.randint(10e3,100e3,1)
         return self.flightNumber[0]
 
-
-    def simulateFlight(self):
-
-        while (self.altitude < 10e3):
+    def flight(self):#simulate launch, cruise and landing
+        if self.altitude< 10e3 and not self.launched:
             self.startLaunch()
-        distanceLand=self.distanceGone
-        while self.distanceGone < (self.distance-distanceLand):
+            self.distanceLand=self.distanceGone
+            return True
+        elif self.distanceGone < (self.distance-self.distanceLand):
+            self.launched = True
             self.cruise()
-        self.landingDistance = math.sqrt(math.pow(self.distance-self.distanceGone,2)+math.pow(self.altitude,2))
-        self.deceleration = pow(self.velocity,2)/(2.*self.landingDistance)
-        while (self.velocity>0):
+            self.landingDistance = math.sqrt(math.pow(self.distance-self.distanceGone,2)+math.pow(self.altitude,2))
+            self.deceleration = pow(self.velocity,2)/(2.*self.landingDistance)
+            return True
+        elif self.velocity>0:
             self.landing()
+            return True
+        return False
 
-        print self.distance
-    def cruise(self):
+    def flightParameters(self):#get flight parameters
+        return {'velocity':self.velocity, 'altitude':self.altitude, 'time':self.time, 'distanceGone':self.distanceGone,'distance':self.distance}
+
+    def cruise(self):#cruise
         self.time=self.time+self.deltatime
         self.distanceGone=self.distanceGone+self.velocity*self.deltatime
-        print " "+str(self.altitude)+" "+str(self.velocity)+" "+str(self.time)+" "+str(self.distanceGone)
 
-    def landing(self):
+    def landing(self):#simulate landing
         self.velocity=self.velocity-self.deceleration*self.deltatime
         self.distanceGone=self.distanceGone+self.velocity*self.deltatime*math.cos(self.angle)
         self.altitude=self.altitude-self.velocity*self.deltatime*math.sin(self.angle)
         self.time=self.time+self.deltatime
-        print " "+str(self.altitude)+" "+str(self.velocity)+" "+str(self.time)+" "+str(self.distanceGone)
-    def startLaunch(self):
+
+    def startLaunch(self):#simulate launch
         airFriction = self.cw*0.5*self.rho*self.velocity*self.velocity*self.Area
         forceY = (self.Thrust-airFriction)*math.sin(self.angle)-self.Gravity
         forceX = (self.Thrust-airFriction)*math.cos(self.angle)
@@ -65,4 +71,3 @@ class FlightSimulator:
         self.distanceGone=self.distanceGone+self.velocity*self.deltatime*math.cos(self.angle)
         self.altitude=self.altitude+self.velocity*self.deltatime*math.sin(self.angle)
         self.time=self.time+self.deltatime
-        print str(airFriction) + " "+str(self.altitude)+" "+str(self.velocity)+" "+str(self.time)+" "+str(self.distanceGone)
