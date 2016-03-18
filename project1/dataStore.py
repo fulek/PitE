@@ -5,32 +5,30 @@ class DataStore:
     def __init__(self,flightNumber):
         self.flightNumber=flightNumber
 
-    def openNewFile(self, number):
-        #check if plane landed or open new file
+    def openNewFile(self, number):#open new file
         self.target = open(self.flightNumber+"_"+str(number)+".txt", 'w')
 
-    def writeToFile(self,parameters):
+    def writeToFile(self,parameters):#write to file
         self.target.write(str(parameters))
         self.target.write("\n")
 
-    def closeFile(self):
+    def closeFile(self):#close file
         self.target.close()
 
-    def targzFile(self):
+    def targzFile(self):#tar gz file
         tar = tarfile.open(self.flightNumber+".tar.gz", "w:gz")
         for name in self.findAlltextFile():
             tar.add(name)
         tar.close()
         self.removeTxt()
 
-    def findAlltextFile(self):
+    def findAlltextFile(self):#find all text files
         files = []
         for file in os.listdir("./"):
             if file.endswith(".txt"):
                 files.append(file)
         return files
 
-    def removeTxt(self):
-        for file in os.listdir("./"):
-            if file.endswith(".txt"):
-                os.remove(file)
+    def removeTxt(self):# remove all text files
+        for file in self.findAlltextFile():
+            os.remove(file)

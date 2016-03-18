@@ -1,5 +1,5 @@
 class InputReaderValidator:
-    def checkNewPlane(self,plane):# check if plane
+    def checkNewPlane(self,plane):# validate new plane
         if plane=='Y':
             return 1
         elif plane == 'N':
@@ -7,7 +7,7 @@ class InputReaderValidator:
         else:
             return -1
 
-    def newPlane(self):
+    def newPlane(self):#check whether monitor new plane
         loop = True
         while loop:
             loop= self.checkNewPlane(raw_input("New plane Y/N?"))
@@ -22,7 +22,7 @@ class InputReaderValidator:
             pass
 
 
-    def delayTime(self):
+    def delayTime(self):#get delay time
         delay = False
         while not delay:
 

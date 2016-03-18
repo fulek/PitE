@@ -1,6 +1,5 @@
-#Here is the daeomon which is recording the flight (will use python-daemon)
+#Here is the daeomon which is recording the flight
 import runDaemon
-import signal
 class RecordDaemon:
     def __init__(self,delay):
         self.delay = delay
@@ -11,7 +10,7 @@ class RecordDaemon:
             thread.daemon=True
             thread.start()
             while thread.isAlive():
-                thread.join(1)
+                thread.join()
         except (KeyboardInterrupt):
             print '\n! Received keyboard interrupt, quitting thread.\n'
 

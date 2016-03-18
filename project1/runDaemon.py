@@ -16,7 +16,7 @@ class RunDaemon (threading.Thread):
         self.stopThread = False
         self.file = dataStore.DataStore(self.name)
         self.counter = 0
-        self.maxEvents = 10
+        self.maxEvents = 10e3
 
     def planeFly(self, delay):
 
