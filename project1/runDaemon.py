@@ -13,16 +13,15 @@ class RunDaemon (threading.Thread):
         self.deltaTime = deltaTime
         self.plane = flightSimulator.FlightSimulator(deltaTime)
         self.name = self.plane.run()
-        self.stopThread = False
         self.file = dataStore.DataStore(self.name)
         self.counter = 0
-        self.maxEvents = 10e3
+        self.maxEvents = 10e2
 
     def planeFly(self, delay):
 
         while self.plane.flight():
             self.file.writeToFile(self.printFlightParameters())
-            print self.printFlightParameters()
+            #print self.printFlightParameters()
             self.counter+=1
             if(self.counter%self.maxEvents==0):
                 self.closeOpen()
