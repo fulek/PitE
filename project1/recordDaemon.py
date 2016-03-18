@@ -1,15 +1,16 @@
 #Here is the daeomon which is recording the flight (will use python-daemon)
 import runDaemon
-
+import signal
 class RecordDaemon:
     def __init__(self,delay):
         self.delay = delay
-        self.maxNumberOfPlanes = 5
 
     def newPlane(self):
-        thread = runDaemon.RunDaemon(self.delay)
-        thread.start()
+        try:
+            thread = runDaemon.RunDaemon(self.delay)
+            thread.daemon=True
+            thread.start()
+            signal.pause()
+        except (KeyboardInterrupt):
+            print '\n! Received keyboard interrupt, quitting thread.\n'
 
-   #def
-aa = RecordDaemon(1)
-aa.newPlane()

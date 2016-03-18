@@ -1,10 +1,11 @@
 #Here is the main program which manages all the rest of the filght parameters recorder
-import flightSimulator
+import recordDaemon
+import inputReaderValidator
 
-sda = flightSimulator.FlightSimulator(0.1)
-#sda.simulateFlight()
-sda.run()
-aaa = True
-while aaa:
-    aaa=sda.flight()
-    print sda.flightParameters()
+
+
+inpt = inputReaderValidator.InputReaderValidator()
+if inpt.newPlane():
+    delay = inpt.delayTime()
+    plane = recordDaemon.RecordDaemon(delay)
+    plane.newPlane()
