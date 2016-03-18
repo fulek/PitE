@@ -1,19 +1,15 @@
 #Here is the daeomon which is recording the flight (will use python-daemon)
-import time
-from daemon import runner
+import runDaemon
 
-class App():
-    def __init__(self):
-        self.stdin_path = '/dev/null'
-        self.stdout_path = '/dev/tty'
-        self.stderr_path = '/dev/tty'
-        self.pidfile_path =  '/tmp/foo.pid'
-        self.pidfile_timeout = 5
-    def run(self):
-        while True:
-            print("Howdy!  Gig'em!  Whoop!")
-            time.sleep(10)
+class RecordDaemon:
+    def __init__(self,delay):
+        self.delay = delay
+        self.maxNumberOfPlanes = 5
 
-app = App()
-daemon_runner = runner.DaemonRunner(app)
-daemon_runner.do_action()
+    def newPlane(self):
+        thread = runDaemon.RunDaemon(self.delay)
+        thread.start()
+
+   #def
+aa = RecordDaemon(1)
+aa.newPlane()
