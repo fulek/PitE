@@ -11,7 +11,7 @@ class FlightSimulator:
         self.maxVelocity = 900.*1000./3600.#max velocity
 
 
-        self.distance = random.uniform(100e3, 10e6)#in meters
+        self.distance = 1000#random.uniform(100e3, 10e6)#in meters
         self.time = 0.
         self.distanceGone = 0.
         self.velocity =0.

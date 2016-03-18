@@ -10,7 +10,8 @@ class RecordDaemon:
             thread = runDaemon.RunDaemon(self.delay)
             thread.daemon=True
             thread.start()
-            signal.pause()
+            while thread.isAlive():
+                thread.join(1)
         except (KeyboardInterrupt):
             print '\n! Received keyboard interrupt, quitting thread.\n'
 

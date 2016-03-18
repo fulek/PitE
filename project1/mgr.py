@@ -5,7 +5,7 @@ import inputReaderValidator
 
 
 inpt = inputReaderValidator.InputReaderValidator()
-if inpt.newPlane():
+while inpt.newPlane():
     delay = inpt.delayTime()
     plane = recordDaemon.RecordDaemon(delay)
     plane.newPlane()
