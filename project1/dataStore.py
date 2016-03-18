@@ -6,7 +6,7 @@ class DataStore:
         self.flightNumber=flightNumber
 
     def openNewFile(self, number):#open new file
-        self.target = open(self.flightNumber+"_"+str(number)+".txt", 'w')
+        self.target = open(self.flightNumber+"_"+str(int(number) )+".txt", 'w')
 
     def writeToFile(self,parameters):#write to file
         self.target.write(str(parameters))
@@ -25,7 +25,7 @@ class DataStore:
     def findAlltextFile(self):#find all text files
         files = []
         for file in os.listdir("./"):
-            if file.endswith(".txt"):
+            if file.endswith(".txt") and file.startswith(self.flightNumber+"_"):
                 files.append(file)
         return files
 
