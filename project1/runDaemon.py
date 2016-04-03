@@ -1,7 +1,6 @@
 #Here is the thread class which simulates plane and reads parameters
 
 from multiprocessing import Queue
-import threading
 import time
 import flightSimulator
 import dataStore
@@ -57,7 +56,7 @@ class RunDaemon():
 
         while len(threads) > 0:#kill threads if Keyboard Interrupt
             try:
-                threads = [t.join(1) for t in threads if t is not None and t.isAlive()]
+                threads = [t.join() for t in threads if t is not None and t.isAlive()]
             except KeyboardInterrupt:
                 print "Ctrl-c received! Sending kill to threads..."
                 for t in threads:
