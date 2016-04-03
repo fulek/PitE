@@ -23,6 +23,7 @@ while True:
         if flightnum is not -1:#check if file exists
             dplots = drawPlots.DrawPlots(flightnum)
             dplots.prepareData()
+            dplots.draw()
 
     #check if new flight or quit
     newPlane = inpt.newPlaneRecordRead(True)

@@ -22,17 +22,19 @@ class InputReaderValidator:
     def checkIfFloat(self,x):#check if number is float
         try:
             float(x)
-            return float(x) > 0
+            return True
         except ValueError:
             pass
 
+    def checkIfMoreThanZero(self,x):
+        return float(x) > 0
 
     def delayTime(self):#get delay time
         delay = False
         while not delay:
 
             x = raw_input("Give delay in [s]: ")
-            delay = self.checkIfFloat(x)
+            delay = (self.checkIfFloat(x) and self.checkIfMoreThanZero(x))
             if delay:
                 return float(x)
 

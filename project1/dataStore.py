@@ -49,8 +49,9 @@ class DataStore:
                 for line in fp:
                     try:
                         var = eval(line)
-                        variables.append(eval(line))
-                    except SyntaxError:
+                        variables.append(var)
+                    except (NameError, SyntaxError) as e:
                         print "Problem with line: "+line
+                        print e
 
         return variables
