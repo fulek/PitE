@@ -2,6 +2,7 @@
 import numpy
 import random
 import math
+import variablesIntoDB
 class FlightSimulator:
 
     def __init__(self, deltaTime):
@@ -22,6 +23,7 @@ class FlightSimulator:
         self.angle = math.atan2(self.heightMax,self.distanceLandStart)
         self.acceleration = pow(self.maxVelocity,2)/(2.*self.distanceLandStart)
         self.flightNumber=numpy.random.randint(10e3,100e3,1)
+        self.var = variablesIntoDB.variablesDB
 
     def run(self):#set flight number
 
@@ -48,7 +50,7 @@ class FlightSimulator:
         return False
 
     def flightParameters(self):#get flight parameters
-        return {'velocity':self.velocity, 'altitude':self.altitude, 'time':self.time, 'distanceGone':self.distanceGone,'distance':self.distance, 'roll':self.roll,'pitch':self.pitch}
+        return {self.var.velocity:self.velocity, self.var.altitude:self.altitude, self.var.time:self.time, self.var.distanceGone:self.distanceGone,self.var.distance:self.distance, self.var.roll:self.roll,self.var.pitch:self.pitch}
 
     def cruise(self):#cruise
         self.time=self.time+self.deltatime

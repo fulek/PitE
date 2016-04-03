@@ -3,6 +3,7 @@ import inputReaderValidator
 import runDaemon
 import mode
 import modes
+import drawPlots
 
 
 while True:
@@ -18,7 +19,10 @@ while True:
         plane = runDaemon.RunDaemon(delay)
         plane.run()
     elif modeCurrent == modes.Modes.READorPlane:
-        print "csd"
+        flightnum = inpt.fileName()
+        if flightnum is not -1:#check if file exists
+            dplots = drawPlots.DrawPlots(flightnum)
+            dplots.prepareData()
 
     #check if new flight or quit
     newPlane = inpt.newPlaneRecordRead(True)

@@ -1,6 +1,7 @@
 #Store data. Save to file and tar it if #entries == 10k. Also here read data and draw plots.
 import tarfile
 import os
+import inputReaderValidator
 class DataStore:
     def __init__(self,flightNumber):
         self.flightNumber=flightNumber
@@ -9,7 +10,6 @@ class DataStore:
         self.target = open(str(self.flightNumber)+"_"+str(int(number) )+".txt", 'w')
 
     def writeToFile(self,parameters):#write to file
-        #print str(parameters)
         self.target.write(str(parameters))
         self.target.write("\n")
 
@@ -33,3 +33,24 @@ class DataStore:
     def removeTxt(self):# remove all text files
         for file in self.findAlltextFile():
             os.remove(file)
+
+    def unpackTargzFile(self):#unpack tar.gz file for readmode
+        tar = tarfile.open(self.flightNumber+".tar.gz")
+        tar.extractall()
+        tar.close()
+        print self.flightNumber+".tar.gz extracted in Current Directory"
+
+
+    def readData(self):
+        files = self.findAlltextFile()
+        variables = []
+        for file in files:
+            with open(file) as fp:
+                for line in fp:
+                    try:
+                        var = eval(line)
+                        variables.append(eval(line))
+                    except SyntaxError:
+                        print "Problem with line: "+line
+
+        return variables

@@ -67,5 +67,5 @@ class RunDaemon():
         self.file.openNewFile(self.counter/self.maxEvents)
         self.runTwoprocesses()
         self.file.closeFile()
-        #self.file.targzFile()
+        self.file.targzFile()
         print "Exiting " + str(self.name)

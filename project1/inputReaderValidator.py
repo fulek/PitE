@@ -1,3 +1,4 @@
+import os
 class InputReaderValidator:
     def checkYNq(self,inpt):# check Yes, No, quit
         if inpt=='Y':
@@ -34,4 +35,17 @@ class InputReaderValidator:
             delay = self.checkIfFloat(x)
             if delay:
                 return float(x)
+
+    def fileName(self):#get flight number for read mode
+        return self.checkIfTarGzFileExists(raw_input("Please give the flight number: "))
+
+    def checkIfTarGzFileExists(self, flightNum):#check if tar.gz file exists
+        PATH = "./"+flightNum+".tar.gz"
+
+        if os.path.isfile(PATH) and os.access(PATH, os.R_OK):
+            print "File for flight "+flightNum+" exists and is readable"
+            return flightNum
+        else:
+            print "For flight "+flightNum+" either file is missing or is not readable"
+            return -1
 
