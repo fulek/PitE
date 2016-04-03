@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c13fb10-e2bb-4324-9716-98ddbc0b0f85" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flightSimulator.py" afterPath="$PROJECT_DIR$/flightSimulator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runDaemon.py" afterPath="$PROJECT_DIR$/runDaemon.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inputReaderValidator.py" afterPath="$PROJECT_DIR$/inputReaderValidator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mgr.py" afterPath="$PROJECT_DIR$/mgr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mode.py" afterPath="$PROJECT_DIR$/mode.py" />
     </list>
     <ignored path="project1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +31,10 @@
         <entry file="file://$PROJECT_DIR$/mgr.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding>
+                <element signature="e#87#114#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,16 +43,38 @@
         <entry file="file://$PROJECT_DIR$/inputReaderValidator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runDaemon.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runDaemon.py">
+      <file leaf-file-name="mode.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mode.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <element signature="e#23#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runDaemon.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/runDaemon.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7798742">
               <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
               <folding>
                 <element signature="e#70#103#0" expanded="true" />
@@ -68,20 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myThread.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myThread.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flightSimulator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="flightSimulator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flightSimulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.25786164">
+            <state vertical-scroll-proportion="0.0">
               <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
               <folding>
                 <element signature="e#25#37#0" expanded="true" />
@@ -109,11 +126,14 @@
         <option value="$PROJECT_DIR$/killAppThread.py" />
         <option value="$PROJECT_DIR$/41353_0.0.txt" />
         <option value="$PROJECT_DIR$/recordDaemon.py" />
-        <option value="$PROJECT_DIR$/inputReaderValidator.py" />
         <option value="$PROJECT_DIR$/dataStore.py" />
-        <option value="$PROJECT_DIR$/mgr.py" />
         <option value="$PROJECT_DIR$/runDaemon.py" />
         <option value="$PROJECT_DIR$/flightSimulator.py" />
+        <option value="$PROJECT_DIR$/enums.py" />
+        <option value="$PROJECT_DIR$/mode.py" />
+        <option value="$PROJECT_DIR$/inputReaderValidator.py" />
+        <option value="$PROJECT_DIR$/modes.py" />
+        <option value="$PROJECT_DIR$/mgr.py" />
       </list>
     </option>
   </component>
@@ -421,7 +441,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#87#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -475,7 +497,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#87#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -529,7 +553,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#87#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -583,7 +609,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#87#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -619,7 +647,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#87#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -659,10 +689,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flightSimulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="e#25#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inputReaderValidator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -670,7 +710,17 @@
     <entry file="file://$PROJECT_DIR$/mgr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#87#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myThread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -685,30 +735,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myThread.py">
+    <entry file="file://$PROJECT_DIR$/modes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#23#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runDaemon.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.7798742">
           <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
             <element signature="e#70#103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flightSimulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.25786164">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding>
-            <element signature="e#25#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
