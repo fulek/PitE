@@ -6,9 +6,10 @@ class DataStore:
         self.flightNumber=flightNumber
 
     def openNewFile(self, number):#open new file
-        self.target = open(self.flightNumber+"_"+str(int(number) )+".txt", 'w')
+        self.target = open(str(self.flightNumber)+"_"+str(int(number) )+".txt", 'w')
 
     def writeToFile(self,parameters):#write to file
+        #print str(parameters)
         self.target.write(str(parameters))
         self.target.write("\n")
 
@@ -16,7 +17,7 @@ class DataStore:
         self.target.close()
 
     def targzFile(self):#tar gz file
-        tar = tarfile.open(self.flightNumber+".tar.gz", "w:gz")
+        tar = tarfile.open(str(self.flightNumber)+".tar.gz", "w:gz")
         for name in self.findAlltextFile():
             tar.add(name)
         tar.close()
@@ -25,7 +26,7 @@ class DataStore:
     def findAlltextFile(self):#find all text files
         files = []
         for file in os.listdir("./"):
-            if file.endswith(".txt") and file.startswith(self.flightNumber+"_"):
+            if file.endswith(".txt") and file.startswith(str(self.flightNumber)+"_"):
                 files.append(file)
         return files
 

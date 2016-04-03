@@ -11,11 +11,13 @@ class FlightSimulator:
         self.maxVelocity = 900.*1000./3600.#max velocity
 
 
-        self.distance = random.uniform(100e3, 10e6)#in meters
+        self.distance = random.uniform(100e3, 10e4)#in meters
         self.time = 0.
         self.distanceGone = 0.
         self.velocity =0.
         self.altitude =0.
+        self.roll = 0.
+        self.pitch = 0.
         self.distanceLandStart=self.distance/10.#distance for launch/land
         self.angle = math.atan2(self.heightMax,self.distanceLandStart)
         self.acceleration = pow(self.maxVelocity,2)/(2.*self.distanceLandStart)
@@ -39,7 +41,7 @@ class FlightSimulator:
         return False
 
     def flightParameters(self):#get flight parameters
-        return {'velocity':self.velocity, 'altitude':self.altitude, 'time':self.time, 'distanceGone':self.distanceGone,'distance':self.distance}
+        return {'velocity':self.velocity, 'altitude':self.altitude, 'time':self.time, 'distanceGone':self.distanceGone,'distance':self.distance, 'roll':self.roll,'pitch':self.pitch}
 
     def cruise(self):#cruise
         self.time=self.time+self.deltatime
