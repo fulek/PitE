@@ -22,7 +22,7 @@ class RunDaemon():
             self.counter+=1
             q.put(self.plane.flightParameters())
             qfinish.put(True)
-            time.sleep(self.deltaTime)
+            #time.sleep(self.deltaTime)
         qfinish.put(False)
         return False
 
@@ -38,7 +38,7 @@ class RunDaemon():
         while qfinish.get():
             self.file.writeToFile(q.get())
             self.checkIfcloseFile()
-            time.sleep(self.deltaTime)
+            #time.sleep(self.deltaTime)
         return False
 
     def runTwoprocesses(self):#run two threads - simulation of flight and recorder
@@ -67,5 +67,5 @@ class RunDaemon():
         self.file.openNewFile(self.counter/self.maxEvents)
         self.runTwoprocesses()
         self.file.closeFile()
-        self.file.targzFile()
+        #self.file.targzFile()
         print "Exiting " + str(self.name)

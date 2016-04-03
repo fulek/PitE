@@ -27,15 +27,22 @@ class FlightSimulator:
 
         return self.flightNumber[0]
 
+    def rollPitchVelocity(self):
+        self.pitch+=random.uniform(-1, 1)*0.05
+        self.roll += random.uniform(-1, 1)*0.3
+        self.velocity+= random.uniform(-1, 1)
     def flight(self):#simulate launch, cruise and landing
         if self.distanceGone < self.distanceLandStart:
             self.startLaunch(True)
+            self.rollPitchVelocity()
             return True
         elif self.distanceGone < (self.distance-self.distanceLandStart):
             self.cruise()
+            self.rollPitchVelocity()
             return True
         elif self.velocity>0:
             self.startLaunch(False)
+            self.rollPitchVelocity()
             return True
         print self.distance
         return False
@@ -53,4 +60,5 @@ class FlightSimulator:
         self.velocity=self.velocity+accdecc*self.acceleration*self.deltatime
         self.distanceGone=self.distanceGone+self.velocity*self.deltatime*math.cos(self.angle)
         self.altitude=self.altitude+accdecc*self.velocity*self.deltatime*math.sin(self.angle)
+        self.pitch = ((lambda:-self.angle, lambda:self.angle)[land]())
         self.time=self.time+self.deltatime

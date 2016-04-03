@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c13fb10-e2bb-4324-9716-98ddbc0b0f85" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flightSimulator.py" afterPath="$PROJECT_DIR$/flightSimulator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runDaemon.py" afterPath="$PROJECT_DIR$/runDaemon.py" />
     </list>
     <ignored path="project1.iws" />
@@ -43,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runDaemon.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="runDaemon.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runDaemon.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11949685">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
               <folding>
                 <element signature="e#70#103#0" expanded="true" />
               </folding>
@@ -77,24 +78,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flightSimulator.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flightSimulator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flightSimulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.25786164">
+              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
               <folding>
                 <element signature="e#25#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drawPlots.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawPlots.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -119,10 +110,10 @@
         <option value="$PROJECT_DIR$/41353_0.0.txt" />
         <option value="$PROJECT_DIR$/recordDaemon.py" />
         <option value="$PROJECT_DIR$/inputReaderValidator.py" />
-        <option value="$PROJECT_DIR$/flightSimulator.py" />
         <option value="$PROJECT_DIR$/dataStore.py" />
         <option value="$PROJECT_DIR$/mgr.py" />
         <option value="$PROJECT_DIR$/runDaemon.py" />
+        <option value="$PROJECT_DIR$/flightSimulator.py" />
       </list>
     </option>
   </component>
@@ -676,21 +667,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myThread.py">
+    <entry file="file://$PROJECT_DIR$/mgr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flightSimulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,20 +685,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgr.py">
+    <entry file="file://$PROJECT_DIR$/myThread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runDaemon.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11949685">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
             <element signature="e#70#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flightSimulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.25786164">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="e#25#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
