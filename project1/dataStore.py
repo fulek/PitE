@@ -1,7 +1,6 @@
 #Store data. Save to file and tar it if #entries == 10k. Also here read data and draw plots.
 import tarfile
 import os
-import inputReaderValidator
 class DataStore:
     def __init__(self,flightNumber):
         self.flightNumber=flightNumber
@@ -41,7 +40,7 @@ class DataStore:
         print self.flightNumber+".tar.gz extracted in Current Directory"
 
 
-    def readData(self):
+    def readData(self):#read dics from files for flight
         files = self.findAlltextFile()
         variables = []
         for file in files:

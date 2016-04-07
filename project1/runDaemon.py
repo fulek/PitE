@@ -12,7 +12,7 @@ class RunDaemon():
         self.name = self.plane.run()
         self.file = dataStore.DataStore(self.name)
         self.counter = 0
-        self.maxEvents = 10e2#max events in the single file
+        self.maxEvents = 1e4#max events in the single file
 
     def planeFlight(self, q,qfinish):#simulate flight
         while True:

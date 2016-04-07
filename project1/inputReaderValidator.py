@@ -26,7 +26,7 @@ class InputReaderValidator:
         except ValueError:
             pass
 
-    def checkIfMoreThanZero(self,x):
+    def checkIfMoreThanZero(self,x):#check if number > 0
         return float(x) > 0
 
     def delayTime(self):#get delay time
