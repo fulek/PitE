@@ -46,8 +46,6 @@ class DrawPlots:
         gr1 = Graph(len(self.time))
         for i, (xx, yy) in enumerate(zip(self.time, toDraw)):
             gr1.SetPoint(i, xx, yy)
-        '''gr1 = ROOT.TGraph(len(self.time), array("f",self.time), array("f",toDraw))'''
-        #gr1.SetTitle("")
         gr1.GetXaxis().SetNdivisions(105)
         gr1.GetXaxis().SetLabelOffset(0.015)
         gr1.GetXaxis().SetNoExponent(1)
