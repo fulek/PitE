@@ -1,3 +1,4 @@
+#Base class for signal generation
 import abc
 class Signl( object ):
     __metaclass__ = abc.ABCMeta

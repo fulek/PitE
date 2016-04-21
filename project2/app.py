@@ -4,16 +4,17 @@ import fitterSinus
 import statAnalyzer
 import fitterLinear
 import fitterPol3
+#Manager app
 
-
-gen = dataGenerator.DataGenerator(1000, 100)
-gen.setSigmaNoise(10.)
+gen = dataGenerator.DataGenerator(1000, 100)#generate 1000 points with amplitude =100
+gen.setSigmaNoise(10.)#set sigma level for noise
 data = gen.generate()
 
-model = 'pol3'
+model = 'sine'
 function = None
 coeff = None
 ndof = None
+#Choose the function and fit it
 if model == 'sine':
     fitsine = fitterSinus.FitterSinus(data)
     coeff = fitsine.fit()
@@ -32,7 +33,7 @@ elif model == 'pol3':
     ndof = len(data.get('x'))-4
 
 try:
-
+#Analyze fitted function (chi2/ndf)
     anal = statAnalyzer.StatAnalyzer(data,function, coeff, ndof)
     print "mode: "+model
     print "coefficients: "+str(coeff)

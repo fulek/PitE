@@ -1,3 +1,4 @@
+#Generate gaussian noise
 import noise
 import numpy as np
 class GaussianNoise(noise.Noise):

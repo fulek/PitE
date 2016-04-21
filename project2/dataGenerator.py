@@ -1,3 +1,4 @@
+#Class for data generation
 import sineSignal
 import gaussianNoise
 import numpy as np
@@ -14,10 +15,10 @@ class DataGenerator:
         self.amplitude = amplitude
 
 
-    def setSigmaNoise(self,signoise):
+    def setSigmaNoise(self,signoise):#set sigma for the noise simulation(gausssian)
         self.sigmaNoise = signoise
 
-    def generate(self):
+    def generate(self):#generate signal+noise and return the sum of those two
         sig = sineSignal.SineSignal(self.amplitude)
         ns = gaussianNoise.GaussianNoise(self.sigmaNoise)
         for i in range(0,self.numberOfPoints):

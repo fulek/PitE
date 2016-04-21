@@ -1,3 +1,4 @@
+#Fit pol3 function to the data
 import fitter
 import numpy as np
 class FitterPol3(fitter.Fitter, object):

@@ -1,3 +1,4 @@
+#Base class for noise generation
 import abc
 class Noise(object):
     __metaclass__ = abc.ABCMeta

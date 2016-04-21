@@ -1,3 +1,4 @@
+#Base class for fitting
 import abc
 from scipy.optimize import curve_fit
 
@@ -13,6 +14,6 @@ class Fitter(object):
     def function(self):
         return
 
-    def fit(self):
+    def fit(self):#fitting curve
         popt, pcov = curve_fit(self.function, self.x, self.y)
         return popt

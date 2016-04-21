@@ -1,3 +1,4 @@
+#Fit sine function to the data
 import fitter
 import numpy as np
 
