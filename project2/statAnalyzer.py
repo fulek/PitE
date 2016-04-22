@@ -1,6 +1,5 @@
 #Analyze chi2/ndf
-from scipy import stats
-import math
+import numpy as np
 class StatAnalyzer:
     def __init__(self, data, function, coeff, ndof):
         self.data = data
@@ -8,15 +7,15 @@ class StatAnalyzer:
         self.coeff =coeff
         self.ndof =ndof
         self.expected = []
-        self.observed =[]
+
 
     def fillExpected(self):#prepare data (observed and expected from function)
         for k in range(0, len(self.data.get('x'))):
-            self.expected.append(math.fabs(self.function(self.data.get('x')[k],*self.coeff)))
-            self.observed.append(math.fabs(self.data.get('y')[k]))
+            self.expected.append(self.function(self.data.get('x')[k],*self.coeff))
         return
 
     def calculateChi2(self):#calculate chi2/ndf
         self.fillExpected()
-        chi2, p = stats.chisquare(self.observed, f_exp=self.expected, ddof=self.ndof)
+        print len(self.data.get('y'))
+        chi2 = np.sum(((np.array(self.data.get('y'))-np.array(self.expected))/np.array(self.data.get('std')))**2)
         return chi2/self.ndof

@@ -8,5 +8,5 @@ class GaussianNoise(noise.Noise):
         self.sigma = sigma
 
     def generateNoise(self):
-        y = np.random.normal(0,self.sigma,1)
+        y = np.random.normal(np.random.uniform(-self.sigma, self.sigma,1)[0],self.sigma,1)
         return y[0]
