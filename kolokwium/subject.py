@@ -9,3 +9,6 @@ class Subject:
 
     def getGrades(self):
         return self.grades
+
+    def getName(self):
+        return self.name

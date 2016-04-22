@@ -1,0 +1,37 @@
+Name: Nowak
+Subject: p1
+Grades: 
+4.0
+5.0
+2.0
+Mean 3.66666666667
+Subject: p2
+Grades: 
+2.0
+5.0
+Mean 3.5
+Name: Kowalski
+Subject: p1
+Grades: 
+5.0
+2.0
+5.0
+Mean 4.0
+Subject: p2
+Grades: 
+3.0
+5.0
+4.0
+Mean 4.0
+Name: AAA
+Subject: p1
+Grades: 
+3.0
+5.0
+6.0
+Mean 4.66666666667
+Subject: p2
+Grades: 
+3.0
+4.0
+Mean 3.5

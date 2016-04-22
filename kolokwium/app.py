@@ -3,9 +3,10 @@ import dataWriter
 import student
 import subject
 import gradeBook
-'''rb = recordBuilder.RecordBuilder()
+import calcAverage
+rb = recordBuilder.RecordBuilder()
 
-rb.readData()'''
+rb.readData()
 
 aa = dataWriter.DataWriter('grades.txt')
 grades = aa.readNamesAndGrades()
@@ -24,12 +25,14 @@ for line in grades:
         else:
             if sub is not None:
                 std.addSubject(sub)
-                std.getSubjects()
             sub = subject.Subject(str(a[k]))
 
+        if (k+1) == len(a):
+            std.addSubject(sub)
             #print str(a[k])
                     #namesAndGrades.pop(line.split)
 
     gr.addStudent(std)
 
-print gr.getGradeBook()
+ca = calcAverage.CalAverage(gr)
+ca.printRaport()
